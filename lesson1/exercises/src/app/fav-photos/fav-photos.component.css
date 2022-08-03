@@ -1,9 +1,13 @@
 h3 {
    color: brown;
+   text-decoration: underline;
 }
 
 img {
-
+   /* float: left;  */
+   width: 70%; 
+   height: auto; 
+   /* object-fit: cover; */
 }
 
 .photos {

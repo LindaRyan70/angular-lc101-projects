@@ -1,0 +1,10 @@
+.movies {
+    color:crimson;
+    font-size: 25px;
+    /* The textbook solution says to use 1.3vw instead of using px.  Why???  */
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}

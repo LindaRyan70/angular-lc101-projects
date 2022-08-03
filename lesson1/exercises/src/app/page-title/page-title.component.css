@@ -1,0 +1,12 @@
+
+/* I changed the line below from h1 to a div class to include the photo. */
+.pageTitle {
+    text-align: center;
+    text-decoration: underline;
+}
+
+img { 
+    width: 30%;
+    height: auto;
+    padding-top: 20px;
+}

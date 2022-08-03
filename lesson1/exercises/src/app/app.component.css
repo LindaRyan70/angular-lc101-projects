@@ -1,0 +1,20 @@
+.container { 
+    background-color:azure;
+    padding: 30px; 
+}
+
+/* Section below sets styling for the "horizontal rule" line above the links. */
+hr {
+    background-color: dimgrey;
+    color: dimgrey;
+    border: solid 2px dimgrey;
+    height: 5px;
+    width: auto;
+}
+.vertical {
+    background-color: dimgrey;
+    color: dimgrey;
+    border: solid 2px dimgrey;
+    height: auto;
+    width: 5px;
+}

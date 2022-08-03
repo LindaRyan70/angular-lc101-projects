@@ -1,0 +1,14 @@
+.chores {
+    font-family:Arial, Helvetica, sans-serif;
+    color:forestgreen;
+}
+
+h3 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+ul {
+    font-style: italic;
+    font-size: 25px;
+}
