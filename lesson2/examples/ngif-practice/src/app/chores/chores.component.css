@@ -16,3 +16,9 @@ img {
     display: block;
     margin: auto;
 }
+
+p {
+    text-align: center;
+}
+
+/* I could also have put a .treat {color: green} here instead of in the div tag. */
