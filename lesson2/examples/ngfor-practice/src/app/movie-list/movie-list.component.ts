@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieListComponent implements OnInit {
   movies = ['The Manchurian Candidate', 'Oceans 8', 'Hidden Figures', 'The Incredibles', 'The Princess Bride'];
+  
+  // Example below can be used to trigger the *ngIf else block in html file. //
+  // movies = ['Hidden Figures', 'The Incredibles', 'The Princess Bride'];
 
   constructor() { }
 
