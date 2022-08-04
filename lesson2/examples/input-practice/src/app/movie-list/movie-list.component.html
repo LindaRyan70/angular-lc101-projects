@@ -5,4 +5,18 @@
     </ol>
     <hr>
 
- </div>
+   <!-- These lines below add a basic input text box and button. -->
+    <!-- <input #newMovie (keyup.enter)='true' type='text' placeholder="Enter Movie Title Here"/>
+    <button (click)='true'>Add</button>
+    <p>{{newMovie.value}}</p> -->
+    
+   <!-- These lines below replace the ones above in order to reset input value to empty string ' '. -->
+    <!-- <input #newMovie (keyup.enter)="addMovie(newMovie.value); newMovie.value = ''" type='text' placeholder="Enter Movie Title Here"/>
+    <button (click)="addMovie(newMovie.value); newMovie.value = ''" *ngIf = "newTitle">Add</button> -->
+
+  <!-- The following lines below solve the bonus tasks. Replace <input> and <button> lines above with 3 lines below. -->
+    <input #newMovie (keyup.enter)="message = addMovie(newMovie.value); newMovie.value = ''" type="text" placeholder="Enter Movie Title Here"/>
+    <button (click)="message = addMovie(newMovie.value); newMovie.value = ''">Add</button>
+    <p class = "error" *ngIf = "message">{{message}}</p>
+
+</div>
