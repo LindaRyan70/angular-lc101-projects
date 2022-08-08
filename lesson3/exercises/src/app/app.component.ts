@@ -40,7 +40,7 @@ export class AppComponent {
        this.color = 'green';
        this.height = 0;
        this.width = 0;
-       this.message = 'Space shuttle had landed and is ready for takeoff!';
+       this.message = 'Space shuttle has landed and is ready for takeoff!';
 
        // Added line below to reset takeOffEnabled.
        this.takeOffEnabled = true;
@@ -62,7 +62,7 @@ export class AppComponent {
        this.takeOffEnabled = true;
 
        // Added lines below to return rocket image to starting point.
-       rocketImage.style.bottom = '0px';
+       rocketImage.style.bottom = '0px';.
        rocketImage.style.left = '0px';
     }
  }
