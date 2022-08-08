@@ -1,7 +1,28 @@
 <div class="buttons">
-   <h3>{{buttonHeading}}</h3>
-   <button class="gold">Gold</button> <br>
-   <button class="silver">Silver</button> <br>
-   <button class="copper">Copper</button> <hr>
-   <button>Activate/Deactivate Buttons</button>
+   <h3>{{buttonHeading[0]}}</h3>
+   <button [class.gold]="!inactiveGold" [disabled]="inactiveGold" (click)="inactiveGold=true">Gold</button> <br>
+   <button [class.silver]="!inactiveSilver" [disabled]="inactiveSilver" (click)="inactiveSilver=true">Silver</button> <br>
+   <button [class.copper]="!inactiveCopper" [disabled]="inactiveCopper" (click)="inactiveCopper=true">Copper</button> <hr>
+   <!-- Wrote buttonReset() method in .ts to turn other button back on when pressed. Couldn't quite figure out how to 
+turn them all off though. May need to be separate function? -->
+   <button (click)="buttonReset()">Reactivate Buttons</button>
 </div>
+
+
+<!--  Trying to to Chptr 31.4.3 Try It in lines below -->
+<hr>
+<div class="buttons">
+   <h3>{{buttonHeading[1]}}</h3>
+   <button [class.button1]="!changeColor" [disabled]="changeColor" (mouseover)="changeColor = !changeColor">Frustration Incarnate!</button> <br>
+   <!-- The only way I can get the button above to reenable is to use the line below. For some reason the line above only disables upon mouseover,
+       but the line below will disable and reenable the button above with each mouseover! -->
+   <p (mouseover)="changeColor = !changeColor">Push the Button Above!</p>
+
+   <hr>
+   <!-- Trying to do Chptr 31.4.3 Try It in line below but stopped to move on with exercises. -->
+   <!-- <button (mouseover)="changeColor = !changeColor">Catch Me!</button> -->
+</div>
+
+
+
+<!-- For 31.4.3 Try It - I created another div of joke buttons by changing the buttonHeading to a string[array] and added variables to .ts accordingly. -->
